@@ -3,7 +3,7 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: Naked twins is a method in which two squares on the same column or the same row or the same diagonal have same pair of values and constraint propagation is used to elimenate the same values from squares along the same column, row or diagonal.
+A: Our main goal is to reduce the search space for each iteration. In the naked twins approach, we have to find two boxes with the same two potential digits and the two boxes can either be in same rows or same columns or square. When we get the required two boxes that meet the conditions, it helps in constraining the other boxes in the unit and hence reducing our search space.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
