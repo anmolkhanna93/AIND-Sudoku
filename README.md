@@ -7,7 +7,7 @@ A: Naked twins is a method in which two squares on the same column or the same r
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: To solve the Diagonal Sudoku problem, I used constraint propagation to ensure that the values 1-9 appear only once along the diagonal.
+A: For a diagonal Sudoku problem, the two diagonals are introduced as new units. Like we restricted the column, rows and squares from having the repeating values, we need to apply the same restriction on both the diagonals also. So to limit the search space for each iteration we have to use strategies like elimination, naked twins and only choice on diagonals.
 
 ### Install
 
