@@ -112,9 +112,10 @@ def only_choice(values):
 
 def reduce_puzzle(values):
     """
-        Iterate eliminate() and only_choice(). If at some point, there is a box with no available values, return False.
+        First use the three stratergies namely eliminate, only_choice and naked_twins to reduce the puzzle. If at some point, there is a box with no available values, return False.
         If the sudoku is solved, return the sudoku.
         If after an iteration of both functions, the sudoku remains the same, return the sudoku.
+        
         Input: A sudoku in dictionary form.
         Output: The resulting sudoku in dictionary form.
         """
@@ -122,10 +123,15 @@ def reduce_puzzle(values):
     stalled = False
     while not stalled:
         solvedValues_before = len([box for box in values.keys() if len(values[box]) == 1])
+         # Use the Eliminate Strategy
         values = eliminate(values)
+        # Use the Only Choice Strategy
         values = only_choice(values)
+        # Use the Naked Twin Strategy
         values = naked_twins(values)
+        # Checking how many boxes have a determined value, to compare
         solvedValues_after = len([box for box in values.keys() if len(values[box]) == 1])
+        # If no new values were added, stop the loop.
         stalled = solvedValues_before == solvedValues_after
         if len([box for box in values.keys() if len(values[box]) == 0]):
             return values
@@ -167,11 +173,11 @@ def solve(grid):
 if __name__ == '__main__':
     diag_sudoku_grid = '2.............62....1....7...6..8...3...9...7...6..4...4....8....52.............3'
     display(solve(diag_sudoku_grid))
-
+    
     try:
         from visualize import visualize_assignments
         visualize_assignments(assignments)
-
+    
     except SystemExit:
         pass
     except:
