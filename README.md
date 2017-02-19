@@ -16,11 +16,9 @@ This project requires **Python 3**.
 We recommend students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
 Please try using the environment we provided in the Anaconda lesson of the Nanodegree.
 
-##### Optional: Pygame
+##### Solution Walkthrough with Pygame
 
-Optionally, you can also install pygame if you want to see your visualization. If you've followed our instructions for setting up our conda environment, you should be all set.
-
-If not, please see how to download pygame [here](http://www.pygame.org/download.shtml).
+![alt tag](https://github.com/anmolkhanna93/tumblr-Feed/blob/master/tumblrFeed.gif)
 
 ### Code
 
