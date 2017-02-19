@@ -18,7 +18,7 @@ Please try using the environment we provided in the Anaconda lesson of the Nanod
 
 ##### Solution Walkthrough with Pygame
 
-![alt tag](https://github.com/anmolkhanna93/tumblr-Feed/blob/master/tumblrFeed.gif)
+![alt tag](https://github.com/anmolkhanna93/AIND-Sudoku/blob/master/solverDemo.gif)
 
 ### Code
 
